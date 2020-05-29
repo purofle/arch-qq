@@ -138,7 +138,7 @@ dmypy.json
 cython_debug/
 
 #ide
-.idea/
+.idea
 
 #config
 cfg.json
