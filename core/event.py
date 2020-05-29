@@ -1,7 +1,7 @@
 from mirai import Mirai
 from core.config import JsonEvents
 
-cfg = JsonEvents("../cfg.json")
+cfg = JsonEvents("cfg.json")
 host = cfg.read("host") + "/"
 authKey = cfg.read("authKey")
 qq = cfg.read("qq")

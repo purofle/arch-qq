@@ -21,8 +21,8 @@ class JsonEvents:
         _j = json.loads(_f_b)
         return _j[block][block2]
 
-
-if not os.path.exists("../cfg.json"):
-    print("配置文件不存在,正在创建中....")
-    with open("../cfg.json", "w") as file:
-        file.write(json.dumps(base_json, indent=4))
+    if not os.path.exists("cfg.json"):
+        print("配置文件不存在,正在创建中....")
+        with open("cfg.json", "w") as file:
+            file.write(json.dumps(base_json, indent=4))
+        exit(1)
