@@ -7,6 +7,7 @@
 | 依赖 | 作用 |
 |:----:|:----:|
 |   requests   |   驱动整个项目   |
+|   websockets   |   接收消息   |
 |   asyncio   |   协程库，驱动websocket来接受消息   |
 # 使用
 #### 需要先启动`mirai-console和mirai-api-http`！
