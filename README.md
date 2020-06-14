@@ -9,6 +9,7 @@
 |   requests   |   驱动整个项目   |
 |   asyncio   |   协程库，驱动websocket来接受消息   |
 # 使用
+#### 需要先启动`mirai-console和mirai-api-htt！
 ```bash
 git clone https://github.com/purofle/cli-qq
 cd cli-qq
