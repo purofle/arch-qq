@@ -141,4 +141,4 @@ cython_debug/
 .idea
 
 #config
-cfg.json
+config.py
