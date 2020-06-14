@@ -8,6 +8,15 @@
 |:----:|:----:|
 |   requests   |   驱动整个项目   |
 |   asyncio   |   协程库，用去驱动websocket来接受消息   |
+# 使用
+```bash
+git clone https://github.com/purofle/cli-qq
+cd cli-qq
+pip3 install requests asyncio --user
+mv config.py.eg config.py
+#自行修改配置文件
+python main.py
+```
 # TODO:
 - 发送消息
 - 格式化接收到的消息
