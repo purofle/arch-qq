@@ -5,7 +5,7 @@ class Authorize:
 
     def __init__(self, qq: int, host: str, authKey: str):
         self.qq = qq
-        self.host = host
+        self.host = "http://"+host
         self.authKey = authKey
         self.session = None
 
