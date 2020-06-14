@@ -7,7 +7,7 @@
 | 依赖 | 作用 |
 |:----:|:----:|
 |   requests   |   驱动整个项目   |
-|   asyncio   |   协程库，用去驱动websocket来接受消息   |
+|   asyncio   |   协程库，驱动websocket来接受消息   |
 # 使用
 ```bash
 git clone https://github.com/purofle/cli-qq
