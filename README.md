@@ -22,3 +22,4 @@ python main.py
 # TODO:
 - 发送消息
 - 格式化接收到的消息
+- api?
