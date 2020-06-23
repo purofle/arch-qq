@@ -22,18 +22,13 @@ async def Main(app: Mirai, group: Group, member: Member, message: MessageChain,s
         if m_text == "pkg":
             await app.sendGroupMessage(group, [Plain(text="使用pkg+空格+包名来使用！")])
             raise IndexError(message.toString())
-        print("开始1")
         try:
-            print("开始2")
             await app.sendGroupMessage(group, [Plain(text="正在搜索...请稍后...")])
-            nn = search(m_text[4:])
-            print("搜索结束")
+            nn = await search(m_text[4:])
         except IndexError:
             await app.sendGroupMessage(group, [Plain(text="未找到此包！")])
         else:
-            print("开始4")
             nnn = len(nn)
-            print(nnn)
             if nnn > 2:
                 nnnn = ""
                 for i in range(len(nn)):

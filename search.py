@@ -1,16 +1,17 @@
 import requests
 import json
+import asyncio
 
-def re(url):
+async def re(url):
     r = requests.get(url)
     r_j = json.loads(r.text)
     return r_j
 
-def search(name):
+async def search(name):
     url = "https://www.archlinux.org/packages/search/json/?%s=%s"
-    n = re(url % ("name", name))
+    n = await re(url % ("name", name))
     if len(n["results"]) == 0:
-        n2 = re(url %("q", name))
+        n2 = await re(url %("q", name))
         if len(n2["results"]) == 0:
             raise IndexError("未找到此包")
         else:
