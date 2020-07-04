@@ -1,6 +1,5 @@
 #!/bin/env python3
 from mirai import Mirai, Plain, MessageChain, Group, Member, GroupMessage, At, Source, Plain
-from string import Template
 import asyncio
 from search import *
 
@@ -31,7 +30,9 @@ async def Main(app: Mirai, group: Group, member: Member, message: MessageChain,s
             nnn = len(nn)
             if nnn > 2:
                 nnnn = ""
-                for i in range(len(nn)):
+                for i in range(nnn):
+                    if i > 6:
+                        break
                     nnnn += nn[i]["pkgname"] + "\n"
                 await app.sendGroupMessage(group, [Plain(text="搜索到了多个包：\n%s" % nnnn)])
             else:
